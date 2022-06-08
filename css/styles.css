@@ -8,6 +8,7 @@
   --secondary-btn-text-color: #ffffff;
   --secondary-btn-bgc-color: #2196f3;
 
+  --primary-bg-color: #fff;
   --section-secondary-color: #f5f4fa;
   --footer-bg-color: #2f303a;
 }
@@ -19,7 +20,14 @@ body {
   letter-spacing: 0.03em;
 
   color: var(--primary-text-color);
-  background-color: #fff;
+  background-color: var(--primary-bg-color);
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
 }
 
 .btn {
