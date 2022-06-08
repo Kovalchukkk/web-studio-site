@@ -1,4 +1,7 @@
 :root {
+  --main-font: Roboto, sans-serif;
+  --secondary-font: Raleway, sans-serif;
+
   --primary-text-color: #757575;
   --secondary-text-color: #212121;
   --accent-text-color: #2196f3;
@@ -14,7 +17,7 @@
 }
 
 body {
-  font-family: Roboto, sans-serif;
+  font-family: var(--main-font);
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -76,9 +79,13 @@ img {
 }
 
 /* Header */
+.header {
+  border-bottom: 1px solid #ececec;
+  background-color: var(--primary-bg-color);
+}
 /* Logo */
 .logo {
-  font-family: Raleway, sans-serif;
+  font-family: var(--secondary-font);
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
@@ -123,6 +130,15 @@ img {
 
 /* Contact-navigation */
 
+.contact-nav {
+  display: flex;
+  margin-left: auto;
+}
+
+.contact-item + .contact-item {
+  margin-left: 50px;
+}
+
 .contact-link {
   font-weight: 500;
   line-height: 1.14;
@@ -132,6 +148,10 @@ img {
 /* Hover-header*/
 .nav-link:hover,
 .nav-link:focus {
+  color: var(--accent-text-color);
+}
+
+.current-nav {
   color: var(--accent-text-color);
 }
 
