@@ -14,6 +14,10 @@
   --primary-bg-color: #fff;
   --section-secondary-color: #f5f4fa;
   --footer-bg-color: #2f303a;
+
+  /* card-set-gap */
+  --features-card-set-gap: 30px;
+  --portfolio-card-set-gap: 30px;
 }
 
 body {
@@ -198,7 +202,12 @@ img {
 
 /* Section */
 
+.section {
+  padding: 94px 0;
+}
+
 .section-title {
+  margin-bottom: 50px;
   font-size: 36px;
   line-height: 1.167;
   text-align: center;
@@ -208,7 +217,25 @@ img {
 
 /* Особенности */
 
+.features.section {
+  padding-bottom: 0;
+}
+
+.features-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: calc(-1 * var(--features-card-set-gap));
+  margin-top: calc(-1 * var(--features-card-set-gap));
+}
+
+.features-item {
+  flex-basis: calc(100% / 4 - var(--features-card-set-gap));
+  margin-left: var(--features-card-set-gap);
+  margin-top: var(--features-card-set-gap);
+}
+
 .features-title {
+  margin-bottom: 10px;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
