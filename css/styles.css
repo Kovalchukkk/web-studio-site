@@ -163,9 +163,12 @@ img {
 /* Main */
 /* Hero */
 .hero {
+  padding: 200px 0;
+  text-align: center;
   background-color: #2f303a;
 }
 .hero-title {
+  margin-bottom: 30px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -176,6 +179,9 @@ img {
   color: #ffffff;
 }
 .hero-btn {
+  padding: 10px 32px;
+  border-radius: 4px;
+  justify-content: center;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
