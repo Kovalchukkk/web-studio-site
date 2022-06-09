@@ -245,7 +245,16 @@ img {
 
 /* Чем мы занимаемся */
 
+.services-list {
+  display: flex;
+}
+
+.services-item + .services-item {
+  margin-left: 30px;
+}
+
 /* Наша команда */
+
 .section.command {
   background-color: var(--section-secondary-color);
 }
