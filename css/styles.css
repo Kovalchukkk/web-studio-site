@@ -39,7 +39,7 @@ p {
 
 img {
   display: block;
-  max-width: 100%;  
+  min-width: 100%;  
   height: auto;
 }
 
@@ -308,7 +308,25 @@ img {
   margin-left: 8px;
 }
 
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: calc(-1 * var(--portfolio-card-set-gap));
+  margin-top: calc(-1 * var(--portfolio-card-set-gap));
+}
 
+.portfolio-item {
+  flex-basis: calc(100% / 3 - var(--portfolio-card-set-gap));
+  margin-left: var(--portfolio-card-set-gap);
+  margin-top: var(--portfolio-card-set-gap);
+}
+
+.portfolio-content {
+  padding: 20px 24px;
+  border-bottom: 1px solid rgba(238, 238, 238, 1);
+  border-left: 1px solid rgba(238, 238, 238, 1);
+  border-right: 1px solid rgba(238, 238, 238, 1);
+}
 
 .portfolio-btn {
   padding: 6px 22px;
