@@ -39,7 +39,7 @@ p {
 
 img {
   display: block;
-  min-width: 100%;  
+  max-width: 100%;
   height: auto;
 }
 
@@ -389,4 +389,3 @@ img {
 .address-link:focus {
   color: var(--accent-text-color);
 }
-
